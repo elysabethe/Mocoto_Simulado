@@ -1,0 +1,13 @@
+inicio 
+
+enquanto(3>2)farei{
+
+se(cor(1)=="BRANCO" e cor(2)=="BRANCO")entao{
+frente(50)
+}enquanto(cor(1)=="PRETO" e cor(2)=="BRANCO")farei{
+direita(150)
+}enquanto(cor(1)=="BRANCO" e cor(2)=="PRETO")farei{
+esquerda(150)
+}
+}
+fim

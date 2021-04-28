@@ -1,0 +1,131 @@
+inicio			
+
+
+enquanto(12>4)farei{
+
+		
+escrever(1,cor(5))
+escrevernumero(2,ultra(1))
+
+    se(cor(1)=="BRANCO" e cor(2)=="BRANCO" e cor(3)=="BRANCO" e cor(4)=="BRANCO" )entao{
+frente(80) #seguirlinhanormalparafrente
+esperar(50)
+}   
+
+
+    senao se(cor(1)=="PRETO" e cor(2)=="BRANCO" e cor(3)=="BRANCO" e cor(4)=="BRANCO" )entao{
+       
+            direita(500)
+             esperar(10)
+         #alinharparadireita
+}
+
+
+
+     senao se(cor(1)=="BRANCO" e cor(2)=="PRETO" e cor(3)=="BRANCO" e cor(4)=="BRANCO" )entao{
+direita(500)
+  
+            esperar(10)
+} #alinharpradireita
+ 
+
+
+     senao se(cor(1)=="BRANCO" e cor(2)=="BRANCO" e cor(3)=="PRETO" e cor(4)=="BRANCO" )entao{
+esquerda(500)
+
+            esperar(10)
+} #alinharpraesquerda
+
+#CURVADENOVENTAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+        senao se(cor(1)=="PRETO"  e cor(2)=="PRETO")entao{
+frente(50)
+esperar(800)
+enquanto(cor(3)!="PRETO")farei{
+direita(1000)
+}
+frente(50)
+esperar(1000)
+tras(50)
+direita(500)
+esperar(500)
+ } #VIRARDIREITA
+        
+
+
+  
+senao se(cor(3)=="PRETO"  e cor(4)=="PRETO")entao{
+frente(60)
+esperar(1000)
+enquanto(cor(2)!="PRETO")farei{
+esquerda(1000)
+}   
+frente(50)
+esperar(1000)
+tras(50)
+esquerda(500)
+esperar(500)
+} #VIRARESQUERDA
+        
+
+
+
+#verdeeeeeeeeeeeeeeeeeeeeeee
+
+
+
+se(cor(1)=="VERDE" ou cor(2)=="VERDE")entao{
+
+frente(50)
+esperar(800)
+enquanto(cor(3)!="PRETO")farei{
+direita(1000)
+}
+ 
+}
+
+
+se(cor(3)=="VERDE" ou cor(4)=="VERDE")entao{
+frente(50)
+esperar(800)
+enquanto(cor(2)!="PRETO")farei{
+esquerda(1000)
+}
+
+} 
+
+
+
+#desviooooooooooo
+se(ultra(1)<=10)entao{
+    
+ direita(1000)
+esperar(2000)
+frente(50)
+esperar(2000)
+esquerda(1000)
+esperar(2000)
+
+
+frente(50)
+esperar(3000)
+esquerda(1300)
+esperar(2000)
+
+  
+ se(cor(3)=="PRETO"  ou cor(4)=="PRETO")entao{
+frente(60)
+esperar(1500)
+enquanto(cor(2)!="PRETO")farei{
+direita(1000)
+}   
+frente(50)
+esperar(1000)
+tras(50)
+esquerda(500)
+esperar(500)
+} #VIRARESQUERDA
+        
+
+}}
+fim
