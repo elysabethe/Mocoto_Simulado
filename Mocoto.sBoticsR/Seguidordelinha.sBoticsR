@@ -1,6 +1,8 @@
 inicio 
 
 enquanto(3>2)farei{
+escrever(1, cor(1))
+escrever(2, cor(2))
 
 se(cor(1)=="BRANCO" e cor(2)=="BRANCO")entao{
 frente(50)
@@ -8,6 +10,26 @@ frente(50)
 direita(150)
 }enquanto(cor(1)=="BRANCO" e cor(2)=="PRETO")farei{
 esquerda(150)
+}
+#verde
+enquanto(cor(1)=="PRETO" e cor(2)=="VERDE")farei{
+    escrever(1, "njjnnnnnnnnnnnnnnnnnnn")
+    frente(150)
+    esperar(50)
+    esquerda(90)
+    se(cor(1)=="PRETO" e cor(2)=="PRETO")entao{
+        esquerda(90)
+        esperar(100)
+    }
+}enquanto(cor(1)=="BRANCO" e cor(2)=="VERDE")farei{
+    escrever(1, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    frente(150)
+        esperar(50)
+    esquerda(90)
+    se(cor(1)=="PRETO" e cor(2)=="PRETO")entao{
+        esquerda(90)
+        esperar(100)
+    }
 }
 }
 fim
